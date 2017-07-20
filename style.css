@@ -107,6 +107,15 @@
       margin-bottom: 20px;
       color: #3A45B2;
     }
+    footer p {
+      text-shadow: 2px 2px 8px black;
+      color: white;
+      font-family: 'Nunito', sans-serif;
+    }
+    footer {
+      background: url('images/stars.jpg') no-repeat center center;
+      background-size: cover;
+    }
     #projLink {
       color: #3A45B2;
     }
