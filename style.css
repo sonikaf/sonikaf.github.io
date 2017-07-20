@@ -16,8 +16,21 @@
       text-shadow: 2px 2px 8px black;
       margin-top: 30vh;
     }
+    table, th, td {
+      border-top: 2px solid #3A45B2;
+      font-family: 'Nunito', sans-serif;
+      font-weight: Bold;
+    }
     h2, p {
       font-family: 'Nunito', sans-serif;
+    }
+    .listStyle {
+      font-family: 'Nunito', sans-serif;
+      color: #3A45B2;
+    }
+    .listStyle p {
+      font-family: 'Nunito', sans-serif;
+      color: black;
     }
     h1 {
       font-family: 'Nunito', sans-serif;
@@ -88,9 +101,6 @@
     }
     #experience, #contact, #skills, #links {
       padding: 100px;
-    }
-    .border-left {
-      border-left: 3px solid #3A45B2;
     }
     footer .glyphicon {
       font-size: 20px;
