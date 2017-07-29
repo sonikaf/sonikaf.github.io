@@ -4,7 +4,7 @@ $(document).ready(function(){
   	$('#title').fadeTo(1500, 1, function() {});
   	$('#subtitle').fadeTo(3000, 1, function() {});
   	// Add smooth scrolling to all links in navbar and footer
-  	$(".navbar a, footer a[href='#sonika_page']").on('click', function(event) {
+  	$(".navbar-collapse a, footer a[href='#sonika_page']").on('click', function(event) {
 	if (this.hash !== "") {
 	  event.preventDefault();
 	  // Store hash
@@ -16,12 +16,9 @@ $(document).ready(function(){
 
 	    window.location.hash = hash;
 	  });
+	  $(".navbar-collapse").collapse('hide');
 	}
   	});
-
-	$('.navbar-collapse a').click(function(){
-		$(".navbar-collapse").collapse('hide');
-	});
 
     var scroll_start = 0;
     var startchange = $('#about');
