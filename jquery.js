@@ -16,11 +16,12 @@ $(document).ready(function(){
 
 	    window.location.hash = hash;
 	  });
-	  $('.navbar-collapse a').click(function(){
-    		$(".navbar-collapse").collapse('hide');
-		});
 	}
   	});
+
+	$('.navbar-collapse a').click(function(){
+		$(".navbar-collapse").collapse('hide');
+	});
 
     var scroll_start = 0;
     var startchange = $('#about');
