@@ -4,21 +4,29 @@ $(document).ready(function(){
   	$('#title').fadeTo(1500, 1, function() {});
   	$('#subtitle').fadeTo(3000, 1, function() {});
   	// Add smooth scrolling to all links in navbar and footer
-  	$(".navbar-collapse a, footer a[href='#sonika_page']").on('click', function(event) {
-	if (this.hash !== "") {
-	  event.preventDefault();
-	  // Store hash
-	  var hash = this.hash;
+  	$(".navbar a, footer a[href='#sonika_page']").on('click', function(event) {
+		if (this.hash !== "") {
+		  event.preventDefault();
+		  // Store hash
+		  var hash = this.hash;
 
-	  $('html, body').animate({
-	    scrollTop: $(hash).offset().top
-	  }, 900, function(){
+		  $('html, body').animate({
+		  	scrollTop: $(hash).offset().top
+		  }, 900, function(){
 
-	    window.location.hash = hash;
-	  });
-	  $(".navbar-collapse").collapse('hide');
-	}
+		    window.location.hash = hash;
+		  });
+		}
   	});
+
+	//Navbar Collapse on Mobile
+	$(function() {
+	    $('.nav a').on('click', function(){
+	        if($('.navbar-toggle').css('display') !='none'){
+	            $(".navbar-toggle").trigger( "click" );
+	        }
+	    });
+	});
 
     var scroll_start = 0;
     var startchange = $('#about');
