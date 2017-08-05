@@ -23,12 +23,6 @@
     a:hover {
       color: #3A45B2;
     }
-    table, th, td {
-      border-top: 2px solid #3A45B2;
-      font-family: 'Nunito', sans-serif;
-      font-weight: Bold;
-      color: black;
-    }
     h2, p {
       font-family: 'Nunito', sans-serif;
       color: black;
